@@ -1,0 +1,3 @@
+Imagine 1: 48 x 84, 504 octeti, primul octet 00.
+Imagine 2: 48 x 84, 504 octeti, primul octet 00.
+Fisiere HEX externe nu sunt necesare.
