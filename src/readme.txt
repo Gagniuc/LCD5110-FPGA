@@ -1,0 +1,1 @@
+If your antivirus detects a "malware" in these files, just uninstall it, it is pure garbage.
