@@ -58,7 +58,9 @@ The pin assignments below are taken from the supplied `.qsf` files. They are **F
 
 The Quartus assignments specify **3.3 V LVTTL** I/O. Connect the LCD ground to the FPGA board ground and power the LCD according to its module specifications, normally from a suitable 3.3 V supply. Do not assume that a bare PCD8544 module is 5 V tolerant. The LCD backlight is separate from the five control/data lines and is not driven by these Verilog modules; observe the backlight module's current-limiting requirements.
 
+<div align="center">
 <img src="https://github.com/Gagniuc/LCD5110-FPGA/blob/main/img/LCD5110%20PINS%20(I).jpeg">
+</div>
 
 These assignments are specific to the supplied EP4CE10E22C8 board setup. On another Cyclone IV board, verify the package, clock pin, actual header wiring, and button polarity before compiling or loading a programming file.
 
@@ -174,11 +176,15 @@ wire [7:0] octet = {
 
 The `VB6/` directories contain the Windows bitmap preparation tool, supplied as Visual Basic 6 projects. The image-switching HEX project contains earlier editor layouts (v5 and v6), including compiled executables. The matrix-based project contains the later **v7 Matrice** source with additional image-storage and export functions.
 
+<div align="center">
 <img src="https://github.com/Gagniuc/LCD5110-FPGA/blob/main/img/LCD5110%20Studio%20(III).png">
+</div>
 
 The editor has two working areas: the source photograph and the resulting 84 × 48 monochrome bitmap. It supports opening JPG, PNG, and BMP images, selecting a crop, zooming, changing the black/white threshold, optional Floyd–Steinberg dithering, direct pixel editing, image inversion, and clearing previously drawn corrections. The left view retains the source image; the right view shows the actual LCD-resolution pixels.
 
+<div align="center">
 <img src="https://github.com/Gagniuc/LCD5110-FPGA/blob/main/img/LCD5110%20Studio%20(IV).png">
+</div>
 
 Mouse operations in the supplied editor include clicking the source view to lock or unlock the cropping frame, using the wheel to change the frame size, and drawing or erasing adjustments. On the LCD preview, left-button dragging draws black pixels, right-button dragging erases them, and the wheel changes the threshold. These functions are particularly useful when a photograph must remain recognizable after reduction to only 4,032 monochrome pixels. The editor supports several distinct output paths:
 
