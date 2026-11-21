@@ -54,7 +54,9 @@ The pin assignments below are taken from the supplied `.qsf` files. They are **F
 
 `S1` and `S2` are used only by the two image-switching implementations. The other three designs have six top-level signals: one clock input and five LCD outputs.
 
+<div align="center">
 <img src="https://github.com/Gagniuc/LCD5110-FPGA/blob/main/img/Cyclone%20IV%20(IV).jpeg">
+</div>
 
 The Quartus assignments specify **3.3 V LVTTL** I/O. Connect the LCD ground to the FPGA board ground and power the LCD according to its module specifications, normally from a suitable 3.3 V supply. Do not assume that a bare PCD8544 module is 5 V tolerant. The LCD backlight is separate from the five control/data lines and is not driven by these Verilog modules; observe the backlight module's current-limiting requirements.
 
